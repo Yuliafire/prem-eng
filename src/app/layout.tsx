@@ -3,6 +3,9 @@ import Header from '@/components/layout/header/Header';
 import Footer from '@/components/layout/footer/Footer';
 import './globals.css';
 import { ThemeProvider } from '../context/ThemeProvider';
+import { AuthProvider } from '@/context/auth/auth-provider';
+import { Toaster } from 'sonner';
+// import { notFound } from 'next/navigation';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://your-domain.ru'),
@@ -55,9 +58,12 @@ export default function RootLayout({
     <html lang="ru" suppressHydrationWarning>
       <body>
         <ThemeProvider>
-          <Header />
-          {children}
-          <Footer />
+          <AuthProvider>
+            <Header />
+            {children}
+            <Footer />
+            <Toaster />
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>

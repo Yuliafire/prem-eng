@@ -1,0 +1,7 @@
+organization=yuliafire
+projectKey=Yuliafire_prem-eng
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.78264
+dashboardUrl=https://sonarcloud.io/dashboard?id=Yuliafire_prem-eng
+ceTaskId=AZudi-OcXV7DshqDeeyO
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZudi-OcXV7DshqDeeyO
