@@ -133,7 +133,7 @@ export const RegisterForm = () => {
         disabled={isSubmitting || !isValid}
         className="bg-black disabled:bg-gray-300 dark:text-white cursor-pointer"
       >
-        {isSubmitting ? 'Creating account...' : 'Create Account'}{' '}
+        {isSubmitting ? 'Создаем эккаунт...' : 'Создать эккаунт'}{' '}
       </Button>
     </form>
   );

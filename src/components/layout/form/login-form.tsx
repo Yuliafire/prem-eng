@@ -101,7 +101,7 @@ export const LoginForm = () => {
         disabled={isSubmitting || !isValid}
         className="bg-black disabled:bg-gray-300 dark:text-white cursor-pointer"
       >
-        {isSubmitting ? 'Signing in...' : 'Sign In'}
+        {isSubmitting ? 'Вход в эккаунт...' : 'Войти'}
       </Button>
     </form>
   );
